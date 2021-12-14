@@ -1,0 +1,234 @@
+<head>
+    <link rel="stylesheet" href="end.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <title>Conclusion</title>
+  </head>
+  
+  <body>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Pridi:wght@300&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-image: url("https://i.pinimg.com/originals/df/69/fc/df69fc588a313d182b107badd46054a7.jpg");
+  background-color: #808080;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: "Pridi", serif;
+}
+body {
+  --scrollY: 0;
+}
+.container {
+  width: 100%;
+  height: auto;
+  max-width: 1024px;
+  padding: 1rem;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-header {
+  color: #000000;
+  text-shadow: 3px 2px #fbdcbb;
+  font-size: 3.1rem;
+  text-align: center;
+}
+.header {
+  min-height: 70vh;
+  min-width: 90%;
+  padding: 1em;
+}
+
+#textOpacity1 {
+  animation: opa 5s;
+}
+#textOpacity2 {
+  opacity: 0%;
+  transition: opacity 1.5s;
+}
+#textOpacity3 {
+  opacity: 0%;
+  transition: opacity 1.5s;
+}
+#textOpacity4 {
+  opacity: 0%;
+  transition: opacity 1.5s;
+}
+#textOpacity5 {
+  opacity: 0%;
+  transition: opacity 1.5s;
+}
+#textOpacity6 {
+  opacity: 0%;
+  transition: opacity 1.5s;
+}
+#textOpacity7 {
+  opacity: 0%;
+  transition: opacity 1.5s;
+}
+#textOpacity8 {
+  opacity: 0%;
+  transition: opacity 1.5s;
+}
+#textOpacity9 {
+  opacity: 0%;
+  transition: opacity 1.5s;
+}
+
+
+
+@keyframes opa {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 20px;
+  background-color:hsl(34, 0%, 29%);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  width: 250px;
+  height: 100px; 
+}
+
+.btn:hover {
+  box-shadow: 5px 5px 5px black;
+}
+    </style>
+
+
+<script>
+document.body.onscroll = function () {
+  let scrollY = window.scrollY;
+  let viewHeight = window.innerHeight;
+  let high = scrollY + viewHeight - 200;
+  
+  let text2 = document.querySelector("#textOpacity2").offsetTop;
+  let text3 = document.querySelector("#textOpacity3").offsetTop;
+  let text4 = document.querySelector("#textOpacity4").offsetTop;
+  let text5 = document.querySelector("#textOpacity5").offsetTop;
+  let text6 = document.querySelector("#textOpacity6").offsetTop;
+  let text7 = document.querySelector("#textOpacity7").offsetTop;
+  let text8 = document.querySelector("#textOpacity8").offsetTop;
+  let text9 = document.querySelector("#textOpacity9").offsetTop;
+
+  document.body.style.setProperty("--scroll", scrollY);
+
+  if (high <= text2) {
+    textOpacity2.style.opacity = 0;
+  } else {
+    textOpacity2.style.opacity = 100;
+  }
+  if (high <= text3) {
+    textOpacity3.style.opacity = 0;
+  } else {
+    textOpacity3.style.opacity = 100;
+  }
+  if (high <= text4) {
+    textOpacity4.style.opacity = 0;
+  } else {
+    textOpacity4.style.opacity = 100;
+  }
+  if (high <= text5) {
+    textOpacity5.style.opacity = 0;
+  } else {
+    textOpacity5.style.opacity = 100;
+  }
+  if (high <= text6) {
+    textOpacity6.style.opacity = 0;
+  } else {
+    textOpacity6.style.opacity = 100;
+  }
+  if (high <= text7) {
+    textOpacity7.style.opacity = 0;
+  } else {
+    textOpacity7.style.opacity = 100;
+  }
+  if (high <= text8) {
+    textOpacity8.style.opacity = 0;
+  } else {
+    textOpacity8.style.opacity = 100;
+  }
+  if (high <= text9) {
+    textOpacity9.style.opacity = 0;
+  } else {
+    textOpacity9.style.opacity = 100;
+  }
+
+};
+
+
+</script>
+    <div class="container ">
+      <div class="header flex-center">
+        <h1 id="textOpacity1" class="text-header">หลังจากเรื่องทุกอย่างได้จบลง <br>ความจริงอันน่าเศร้าก็ได้ปรากฏขึ้นต่อเหล่าผู้ที่หลงเหลือในสงคราม</h1>
+      </div>
+  
+      <div class="header flex-center">
+        <h1 id="textOpacity2" class="text-header">สงครามนั้นนำมาซึ่งผลกระทบต่างๆมากมาย <br>ไม่ว่าจะเป็นการสูญเสีย การแย่งชิงหรือ การแบ่งแยกชนชั้น</h1>
+      </div>
+  
+      <div class="header flex-center">
+        <h1 id="textOpacity3" class="text-header">ผู้คนมากมายต่างล้มตายไปในสงครามที่เกิดขึ้นจากความขัดแย้งและความเชื่อที่ไม่ลงรอยกัน<br>ทำให้ผู้คนต่างเกลียดชังซึ่งกันและกันมากขึ้น</h1>
+      </div>
+  
+      <div class="header flex-center">
+        <h1 id="textOpacity4" class="text-header">ถึงแม้ในปัจจุบันโลกจะเข้าสู่ยุคที่สามารถแก้ไขปัญหาได้ด้วยการพูดคุยกันเพราะการเชื่อมสัมพันธ์ทางไมตรีของแต่ละประเทศ</h1>
+      </div>
+  
+      <div class="header flex-center">
+        <h1 id="textOpacity5" class="text-header">แต่นั่นก็ไม่ได้ลบเลือนถึงประวัติศาสตร์ที่เคยเกิดขึ้นมาได้เลย</h1>
+      </div>
+  
+      <div class="header flex-center">
+        <h1 id="textOpacity6" class="text-header">ดังนั้นเราควรเคารพสิทธิในความคิดเห็นของผู้คนและความเป็นมนุษย์ของพวกเขาเพื่อไม่ให้เกิดเหตุการณ์แบบเดียวกันขึ้นอีกในอนาคต</h1>
+      </div>
+  
+      <div class="header flex-center">
+        <h1 id="textOpacity7" class="text-header">และจงจำเอาไว้เสมอว่ามนุษย์ทุกคนนั้นล้วนมีสิทธิที่จะมีชีวิตเพื่อเดินตามทางของตนเอง</h1>
+      </div>
+  
+      <div class="header flex-center">
+        <h1 id="textOpacity8" class="text-header">เพราะคุณเองก็คงไม่อยากถูกพรากจากอิสรภาพเหล่านั้นไปเหมือนกัน</h1>
+      </div>
+      <div style="padding-bottom: 10vh;">
+        
+        <div class="header flex-center">
+          <h1 id="textOpacity9" class="text-header">War does not determine who is right,<br> Only who is left.<br>- Bertrand Russell -</h1>     
+        </div>
+      </div>   
+      
+             <div>
+      <table align="center">
+       <tr height="100%">
+        <td height="100%" width="100%" valign="middle" align="center">
+            <div id="nextBtn" class="btn"   onClick="javascript:window.open('https://codepen.io/abcatstein/pen/JjrEMgz')">
+  Return
+      </div>
+        </td>
+       </tr>
+      </table>
+    </div>
